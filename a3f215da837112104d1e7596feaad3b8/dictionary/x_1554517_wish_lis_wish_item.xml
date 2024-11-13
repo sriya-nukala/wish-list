@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="5d571dd283b112104d1e7596feaad34e" label="Wish Item" max_length="40" name="x_1554517_wish_lis_wish_item" type="collection">
-        <element label="Item" mandatory="true" max_length="125" name="item" type="string"/>
+        <element display="true" label="Item" mandatory="true" max_length="125" name="item" type="string"/>
+        <element label="Quantity" max_length="40" name="quantity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Display name" max_length="300" name="u_string_1" read_only="true" type="string"/>
         <element label="Requester" mandatory="true" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element label="URL" max_length="1024" name="url" type="url"/>
         <index name="index">
             <element name="requester"/>
         </index>
